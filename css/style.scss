@@ -1,0 +1,485 @@
+/*<--General-Set-->
+  <--HEADER-->
+  <--MENU-navBar-->
+  <--CAROUSEL-->
+  <--Promo-IMAGES x3 -->
+  <--MAIN-->
+  <--pre-FOOTER-->
+  <--FOOTER-->
+  <--ScrollTop-->
+*/
+* {box-sizing: border-box;}
+
+@import 'variables';
+
+
+  /*  <--General-Set-->  */
+  body
+  {
+    font-family: $principal-font;
+    font-size: 100%;
+    margin: 0;
+    background-color: $gray-dark-bkg;
+
+     .flex-container
+     {
+      margin:0 auto;
+      width: 960x;
+    }
+
+    .wrap {
+      margin:0 auto;
+
+      width: 960px; /* 20px smaller, to fit the paddings on the sides */
+    max-width: 80%;
+    
+   }
+  /*  <--HEADER-->   header first option style    */
+ 
+.topHeader
+{
+  position: relative;
+  background-color: $dark-bkg;
+
+  .header{
+    overflow: hidden;
+  background-color: $dark-bkg;
+          
+             a  {
+    float: left;
+  color: $white-bkg;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  }
+  
+  .logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+ 
+  .searchBox
+    {
+      position: relative;
+      float:right;
+      width: 20%;
+      border-right: 1px solid $gray-dark-bkg;
+      padding: 6px 6px;
+
+      form 
+      {
+        -webkit-transition: all 0.3s ease-in-out;
+      	-moz-transition: all 0.3s ease-in-out;
+      	-o-transition: all 0.3s ease-in-out;
+         transition: all 0.3s ease-in-out;
+
+         &:active, &:hover
+         {
+           background: $gray-light-bkg;
+         } 
+         
+        
+         input[type="text"]{
+          font-family: $principal-font;
+          padding: 8px 20px;
+          outline: none;
+          border: none;
+          width: 76%;
+          background: none;
+          font-size: 1em;
+          color:$white-bkg;
+        
+
+      }
+
+      input[type="submit"]{
+        background: url(../img/search.png) no-repeat 0px 4px;
+        border: none;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+
+        &:hover{
+          background: url(../img/search.png) no-repeat 0px 4px;
+        }
+      
+      }}
+    } 
+   .formLogSign
+   {
+     float: right;
+   
+
+   .formLogSign-content 
+   {
+
+    margin-top: 10px;
+     ul li 
+
+     {
+       display: inline-block;
+
+       a 
+       {
+        font-family: $principal-font;
+        font-size: 12px;
+        display: block;
+        padding: 5px 8px;
+        color: $white-bkg;
+        text-transform: uppercase;
+        -webkit-text-stroke: 0.5px;
+       }
+
+        ul span.txt 
+       {
+        font-size: 12px;
+        color: $white-bkg;
+        text-transform: lowercase;
+        -webkit-text-stroke: 0.5px;
+       }
+     }
+    }
+  }
+    
+  }
+   }
+ }
+  /*  <--MENU-navBar-->  */
+ 
+header{
+  background: $white-bkg;
+  width: 100%;
+  height: 76px;
+  
+  ul li{
+    float: left;
+    border-left: 1px solid $white-bkg;
+    list-style: none;
+    text-decoration: none;
+
+
+
+     &:nth-child(6)
+     {
+      border-left: 1px solid $white-bkg;
+     }
+
+     a {
+      font-family: $principal-font;
+      text-decoration: none;
+      display: block;
+      line-height: 1.8em;
+      font-size: 1em;
+      color: $gray-dark-bkg;
+      padding: 20px 26px;
+     border-left: 1px solid $gray-light-bkg;
+    
+
+    &:hover, &:active
+    {
+      color: $green-bkg;
+      text-decoration: none;
+
+    }
+  }
+}
+
+#menu-icon 
+{
+	display: none;
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	top: 30px;
+	left: 6.33333%;
+	background: url(../img/nav-icon.png) no-repeat;
+}
+  .header_right
+  {
+    float: right;
+
+    ul li  {
+      display: inline-block;
+      
+
+      a 
+      {
+        font-family: $principal-font;
+        display: block;
+        text-decoration: none;
+        line-height: 1.8em;
+        font-size: 1em;
+        color: $gray-dark-bkg;
+        padding: 20px 26px;
+       border-left: 1px solid $gray-light-bkg;
+      
+
+span 
+{
+  background:$green-bkg;
+  padding:5px 8px;
+  border-radius:5px;
+}
+
+      }
+    };
+  }
+}
+
+
+
+
+    
+
+
+
+  /*  <--CAROUSEL-->     */
+#heroCarousel 
+{
+  position:relative;
+  background: $gray-dark-bkg;
+
+  .carousel-indicators
+  {
+bottom: -28px;
+
+    li 
+    {
+      display: inline-block;
+      width: 140px;
+      height: 9px;
+      
+      border: none;
+      background-color: $dark-bkg;
+    }
+    .active 
+    {
+      background-color: $green-bkg;
+
+    }
+  }
+  .carousel-item
+  {
+    .carousel-title
+    {
+      position: absolute;
+    	right: 25%;
+      top: 15%;
+      
+      .btn{
+        background: $green-bkg;
+        color: $white-bkg;
+        padding: 25px 12px 10px;
+        display: inline-block;
+        line-height: 1.8em;
+      }
+      h2 
+      {
+        font-family: $principal-font;
+	      padding:10px 0 0;
+	     font-size: 2.5em;
+	     line-height: 1.2em;
+	     color: $dark-bkg;
+	       text-transform:capitalize;
+      }
+      h3 
+      {
+        font-family: $principal-font;
+      	padding-top:15px;
+       	font-size: 1.2em;
+	      line-height:1.5em;
+        color: $white-bkg;
+        
+        &:active 
+        {
+          color: $dark-bkg;
+        }
+      }
+      .carousel_icons{
+        padding: 10px 10px 5px;
+        background: $white-bkg;
+        line-height: 1.8em;
+      }
+    }
+  }
+}
+/*  under carousel text */
+#txtAdv
+{
+  font-family: $principal-font;
+  color: $gray-light-bkg;
+  font-size: 0.9em;
+  width: 40%;
+ 
+
+
+  h4 
+  {
+    text-transform:capitalize;
+    font-size: 1.5125em;
+    color: $gray-light-bkg;
+    line-height: 1.8em;
+
+  }
+
+  p {
+    text-transform:capitalize;
+    font-size: 0.8125em;
+    color: $gray-light-bkg;
+    line-height: 1.8em;
+  };
+}
+/* images under carousel  */
+
+   .top_images
+   {
+     background: $white-bkg;
+
+     
+
+
+     .main1{
+      padding: 4% 4% 2%;
+
+
+    
+      .image1_of_3{
+        float: left;
+        margin-left: 3.3333%;
+        text-align:center;
+
+            &:first-child{
+            margin-left: 0;
+               }
+         img{
+          width:100%;
+        }
+        .tag{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: $gray-dark-bkg;
+          opacity: 0.8;
+          color: $white-bkg;
+          font-size: 1.5em;
+          font-family: $principal-font;
+          text-transform: uppercase;
+          
+        }
+      
+      }
+    }
+  }
+
+   
+   /* products page sections */
+
+.productsContent
+{
+ background-color: $white-gray;
+ .top_main{
+  margin:3% 0;
+  h2{
+    float: left;
+    text-transform: capitalize;
+    color: #242424;
+    font-size: 1.5em;
+    text-shadow: 0 1px 0 #ffffff;
+    line-height: 1.8em;
+  }
+  a{
+    font-size: 1em;
+    float: right;
+    text-transform: capitalize;
+    padding: 8px 20px;
+    color: #BCB4A7;
+    border: 1px solid #BCB4A7;
+}
+}
+
+ .main1 {
+text-align: left; 
+}
+
+   
+
+  }
+
+
+
+
+@media only screen and (max-width: 1100px) {
+
+
+header 
+{
+  position: relative;
+
+ nav 
+ {
+  #menu-icon 
+  {
+    display: inline-block;
+
+  }
+
+  ul
+  {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    background: $dark-bkg;
+    left: 10px;
+    top: 35px;
+    width: 35%;
+
+   
+  }
+ &:active 
+ {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    background: $dark-bkg;
+    left: 10px;
+    top: 35px;
+    width: 35%;
+ }
+  &:hover    {
+    display: block;
+    li 
+    {
+      text-align: center;
+      width: 100%;
+    }
+   }
+ }
+}
+  .carousel-title
+  {
+    display: none;  }
+    .searchBox 
+    {
+      display: none;
+    }
+	}
+	
+
+@media only screen and (max-width: 480px) {
+
+
+    
+	}
+	
+
+@media only screen and (max-width: 320px) {
+
+    
+   
+	
+  }
+
